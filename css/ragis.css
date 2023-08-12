@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/backgroundimg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 30px 60px 30px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(17, 17, 183);
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-box h1::after{
+   content: '';
+   width: 40px;
+   height: 4px;
+   border-radius: 3px;
+   background: rgb(17, 17, 183);
+   position: absolute;
+   bottom: -12px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.input-filed{
+    background: rgb(200, 190, 190);
+    margin: 15px 0px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+.show-err{
+    margin-bottom: 10px;
+}
+.input-filed input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    font-size: 15px;
+    
+}
+.input-filed i{
+    margin-left: 15px;
+    color: rgb(97, 96, 96);
+}
+.input-group a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: rgb(53, 53, 214);
+    color: rgb(253, 245, 245);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+#signupbtn:hover{
+    background-color: green;
+}
+#signinbtn{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+#signinbtn i{
+    font-size: 20px;
+    padding-left: 15px;
+}
+.fa-eye-slash{
+    padding-right: 15px;
+    cursor: pointer;
+}
+.fa-eye{
+    padding-right: 15px;
+    cursor: pointer;
+}

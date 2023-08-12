@@ -1,0 +1,318 @@
+*{
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
+}
+body.dark{
+  background-color:black;
+  color: white;
+}
+body{
+  scroll-behavior: smooth;
+}
+.nav1{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 0px 13px gray;
+  text-align: center;
+  padding: 0px 100px 0px 100px;
+}
+
+.leftnave span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.leftnave a{
+   font-family: 'Roboto', sans-serif;
+   font-size:20px;
+   padding: 5px;
+   text-decoration: none;
+}
+.leftnave a:hover{
+  color: green;
+}
+.rightnave{
+  flex-basis: 50%;
+}
+.rightnave a i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color: brown;
+    color: white;
+    padding: 8px;
+    transition: 0.5s ease-in-out;
+}
+.rightnave a i:hover{
+   transform: rotate(360deg);
+}
+
+.nav1 .dark_light{
+  font-size: 22px;
+  height: 20px;
+}
+.nav1 .dark_light i{
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.nav1 .dark_light i.moon{
+  opacity: 0;
+  pointer-events: none;
+}
+.nav1 .dark_light.active i.moon{
+  opacity: 1;
+  pointer-events:auto;
+}
+.nav1 .dark_light.active i.sun{
+  opacity: 0;
+  pointer-events: none;
+}
+.nav2{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+}
+.nav2 .nav2_left span:hover{
+  color: blue;
+  font-weight: bold;
+}
+.nav2 .nav2_center{
+  font-family: 'Roboto Slab', serif;
+}
+.nav2 .nav2_center span{
+  color: orange;
+}
+.nav2 .nav2_right{
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav2 .nav2_right a{
+  text-decoration: none;
+}
+.nav2 .nav2_right i{
+  padding-right: 8px;
+}
+.nav2 .nav2_left,.nav2 .nav2_center,.nav2 .nav2_right{
+  flex-basis: 33%;
+  margin: auto;
+  cursor: pointer;
+}
+.nav2_left i{
+    margin-left: 10px;
+}
+nav ul {
+   display: flex;
+   padding: 20px 50px;
+   background-color: aqua;
+   justify-content: space-between;
+  
+}
+nav ul li{
+       list-style: none; 
+       padding: 0px 20px;
+       font-family: 'Asap', sans-serif;
+       position: relative;
+}
+nav ul li a{
+       font-size: 21px;
+       text-decoration: none;
+       color: #4747d8;
+       font-weight: 600;
+       transition: 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #0d5f0d;
+}
+nav ul li a.active::after,
+nav ul li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #0d5f0d;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.cart{
+  display: flex;
+  
+}
+.carousel img{
+  height: 550px;
+}
+.latest{
+  padding: 50px 100px;
+}
+.product_intro h1{
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: orangered;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.product_intro span{
+  color: rgb(228, 14, 14);
+}
+.product_intro p{
+  text-align: center;
+  color: gray;
+  margin: 15px 0px;
+}
+.card-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0px 60px 0px;
+  
+  
+}
+.card-container .card{
+  flex-basis: 20%;
+  position: relative;
+}
+
+.card::before{
+  content: "20% off";
+  width: 35%;
+  height: 25px;
+  line-height: 25px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: brown;
+  padding: 0px 9px;
+  transform: rotate(-20deg);
+}
+.card img{
+  width: 100%;
+  height:200px ;
+  transition: 0.5s ease-in-out;
+}
+.card h1{
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.card p{
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.card i{
+  padding-left: 10px;
+  color: goldenrod;
+}
+.card button
+{
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  margin: 0px 70px 15px 0px;
+  padding: 5px 20px;
+}
+.trends{
+  padding: 50px 100px;
+  background-color: rgba(0,0,0,0.01);
+}
+.trends .swiper {
+  width: 100%;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px;
+}
+
+.trends .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.trends.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+}
+footer{
+  background-color: rgb(53, 48, 48);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem;
+}
+footer div{
+  flex-basis: 30%;
+}
+footer div h1{
+  color: orangered;
+}
+footer div h1 span{
+  color: white;
+}
+footer div p{
+  font-size: 17px;
+}
+footer div i{
+    font-size: 25px;
+    margin: 0px 15px 20px;
+}
+.designby p{
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+}
+.last span
+{
+  font-size: 25px;
+}
+.fullbox{
+  background-color: rgb(126, 124, 124);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.contactus{
+   padding: 20px 20px;
+ }
+.contactus h1{
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contactus span{
+  font-size: 15px;
+  margin-left: 100px;
+  font-weight: bold;
+}
+.contactus input{
+    width: 100%;
+    margin-left: 100px;
+}
+.contactus textarea{
+  margin-left: 100px;
+}
+.contactus button{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.contactus button:hover{
+  background-color: green;
+}
+ .map img{
+   width: 550px;
+   height: 400px;
+ }
